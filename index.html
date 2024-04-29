@@ -7,7 +7,7 @@
 <style>
   body {
     background-image: url('https://media.discordapp.net/attachments/1152971143020552322/1234545894570065955/640.png?ex=66311ff6&is=662fce76&hm=0d683a8d0f28666189d7d3a362dcbe0b6d9d68a21829c354e29ee48f487c75e6&=&format=webp&quality=lossless&width=510&height=408'); /* Replace 'your-image-url.jpg' with the URL of your desired image */
-    background-size: cover; /* Ensures the image covers the entire background */
+    background-size: cover; 
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
@@ -23,8 +23,8 @@
     }
   }
   .typing-animation {
-    overflow: hidden; /* Ensures the animation is contained */
-    white-space: nowrap; /* Keeps the text on one line */
+    overflow: hidden; 
+    white-space: nowrap; 
     animation: typing 3s steps(40, end);
   }
   @keyframes typing {
@@ -49,7 +49,7 @@
       .then(response => response.json())
       .then(data => {
         document.getElementById('ipAddress').textContent = data.ip;
-        document.getElementById('loading').style.display = 'none'; // Hide the loading animation once IP is loaded
+        document.getElementById('loading').style.display = 'none'; 
       })
       .catch(error => console.error('Error fetching IP address:', error));
   </script>
